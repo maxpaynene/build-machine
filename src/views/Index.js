@@ -43,6 +43,21 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
+        <video loop autoPlay muted style={{ 
+            minWidth: '100%',
+            minHeight: '100%',
+            width: 'auto',
+            height: 'auto',
+            position: 'fixed',    
+            top: '50%',
+            left: '50%',
+            transform: 'translateX(-50%) translateY(-50%)',
+            zIndex: 10,
+            backgroundSize: 'cover'
+        }}>
+          <source src="../assets/video/video2.mp4" type="video/mp4"/>
+          Your browser does not support HTML5 video.
+        </video>
         <div className="main">
           {/*
             <Images />

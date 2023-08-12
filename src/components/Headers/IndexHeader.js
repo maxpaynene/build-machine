@@ -25,10 +25,14 @@ function IndexHeader() {
   return (
     <>
       <div className="page-header clear-filter" filter-color="blue">
+      <video autoplay muted loop id="myVideo">
+        <source src={require("../../assets/video/video2.mp4")} type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg-4.jpg") + ")"
+            backgroundColor: "rgba(0,0,0,0.5)",
           }}
           ref={pageHeader}
         ></div>
